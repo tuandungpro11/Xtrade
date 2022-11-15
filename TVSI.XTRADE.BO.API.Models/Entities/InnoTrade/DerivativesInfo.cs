@@ -1,0 +1,74 @@
+﻿namespace TVSI.XTRADE.BO.API.Models.Entities.InnoTrade
+{
+    public partial class DerivativesInfo
+    {
+        public long DiId { get; set; }
+        public string? Symbol { get; set; }
+        public long? SymbolId { get; set; }
+        public string? Underlying { get; set; }
+        public string? BoardCode { get; set; }
+        public string? TradingSessionId { get; set; }
+        public string? TradeSesStatus { get; set; }
+        public string? SecurityTradingStatus { get; set; }
+        public string? ListingStatus { get; set; }
+        public string? SecurityType { get; set; }
+        public double? OpenInterest { get; set; }
+        public double? OpenInterestChange { get; set; }
+        public DateTime? FirstTradingDate { get; set; }
+        public DateTime? LastTradingDate { get; set; }
+        public double? BestBidPrice { get; set; }
+        public long? BestBidQtty { get; set; }
+        public double? BestOfferPrice { get; set; }
+        public long? BestOfferQtty { get; set; }
+        public long? TotalBidQtty { get; set; }
+        public long? TotalOfferQtty { get; set; }
+        public double? BasicPrice { get; set; }
+        public double? FloorPrice { get; set; }
+        public double? CeilingPrice { get; set; }
+        public double? MatchPrice { get; set; }
+        public long? MatchQtty { get; set; }
+        public double? MatchValue { get; set; }
+        public double? OpenPrice { get; set; }
+        public double? PriorOpenPrice { get; set; }
+        public long? OpenQtty { get; set; }
+        public double? ClosePrice { get; set; }
+        public double? PriorClosePrice { get; set; }
+        public long? CloseQtty { get; set; }
+        public long? TotalVolumeTraded { get; set; }
+        public double? TotalValueTraded { get; set; }
+        public DateTime? Tradingdate { get; set; }
+        public int? Time { get; set; }
+        public double? TradingUnit { get; set; }
+        public int? DateNo { get; set; }
+        public double? CurrentPrice { get; set; }
+        public double? CurrentQtty { get; set; }
+        public double? HighestPrice { get; set; }
+        public double? LowestPrice { get; set; }
+        public long? OfferCount { get; set; }
+        public long? BidCount { get; set; }
+        public long? NmTotalTradedQtty { get; set; }
+        public double? NmTotalTradedValue { get; set; }
+        public long? PtMatchQtty { get; set; }
+        public double? PtMatchPrice { get; set; }
+        public long? PtTotalTradedQtty { get; set; }
+        public double? PtTotalTradedValue { get; set; }
+        public long? NmBuyForeignQtty { get; set; }
+        public long? PtBuyForeignQtty { get; set; }
+        public long? BuyForeignQtty { get; set; }
+        public double? NmBuyForeignValue { get; set; }
+        public double? PtBuyForeignValue { get; set; }
+        public double? BuyForeignValue { get; set; }
+        public long? NmSellForeignQtty { get; set; }
+        public long? PtSellForeignQtty { get; set; }
+        public long? SellForeignQtty { get; set; }
+        public double? NmSellForeignValue { get; set; }
+        public double? PtSellForeignValue { get; set; }
+        public double? SellForeignValue { get; set; }
+        public DateTime? CreateDate { get; set; }
+        public string? CreateBy { get; set; }
+        public DateTime? ModifyDate { get; set; }
+        public string? ModifyBy { get; set; }
+        public string? Remark { get; set; }
+        public long? Sequence { get; set; }
+    }
+}

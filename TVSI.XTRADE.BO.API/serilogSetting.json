@@ -1,0 +1,15 @@
+﻿{
+  "EnableRequestResponseLogging": "true",
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft.AspNetCore.Diagnostics": "Error",
+        "Microsoft.AspNetCore": "Error",
+        "Microsoft.Hosting.Lifetime": "Error",
+        "Microsoft": "Error",
+        "System": "Error"
+      }
+    }
+  }
+}

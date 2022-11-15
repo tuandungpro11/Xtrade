@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>TVSI.XTRADE.BO.API.Models</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Inno\**" />
+    <Compile Remove="Entities\Tvfm\**" />
+    <EmbeddedResource Remove="Entities\Inno\**" />
+    <EmbeddedResource Remove="Entities\Tvfm\**" />
+    <None Remove="Entities\Inno\**" />
+    <None Remove="Entities\Tvfm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\Scaffold-DbContext.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TVSI.XTRADE.BO.API.Common\TVSI.XTRADE.BO.API.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Helper">
+      <HintPath>..\TVSI.XTRADE.BO.API.Common\Lib\Helper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
